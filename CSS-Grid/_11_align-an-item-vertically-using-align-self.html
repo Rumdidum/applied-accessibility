@@ -1,16 +1,17 @@
 <style>
   .item1{background:LightSkyBlue;}
   .item2{background:LightSalmon;}
-  .item3{background:PaleTurquoise;}
-  .item4{background:LightPink;}
 
-  .item5 {
-    background: PaleGreen;
-    grid-column: 2 / 4;
+  .item3 {
+    background: PaleTurquoise;
     /* Only change code below this line */
-    grid-row: 2 / 4;
+    align-self: end;
+    
     /* Only change code above this line */
   }
+
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
 
   .container {
     font-size: 40px;
@@ -33,9 +34,9 @@
 </div>
 
 <!--
-  CSS Grid: Use grid-row to Control Spacing
-Of course, you can make items consume multiple rows just like you can with columns. You define the horizontal lines you want an item to start and stop at using the grid-row property on a grid item.
+  CSS Grid: Align an Item Vertically using align-self
+Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the align-self property on an item. This property accepts all of the same values as justify-self from the last challenge.
 
-Make the element with the item5 class consume the last two rows.
+Align the item with the class item3 vertically at the end.
 
 -->

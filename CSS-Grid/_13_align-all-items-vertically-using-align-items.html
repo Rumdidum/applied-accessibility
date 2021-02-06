@@ -3,14 +3,7 @@
   .item2{background:LightSalmon;}
   .item3{background:PaleTurquoise;}
   .item4{background:LightPink;}
-
-  .item5 {
-    background: PaleGreen;
-    grid-column: 2 / 4;
-    /* Only change code below this line */
-    grid-row: 2 / 4;
-    /* Only change code above this line */
-  }
+  .item5{background:PaleGreen;}
 
   .container {
     font-size: 40px;
@@ -21,6 +14,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
+    /* Only change code below this line */
+    align-items: end;
+    
+    /* Only change code above this line */
   }
 </style>
 
@@ -33,9 +30,10 @@
 </div>
 
 <!--
-  CSS Grid: Use grid-row to Control Spacing
-Of course, you can make items consume multiple rows just like you can with columns. You define the horizontal lines you want an item to start and stop at using the grid-row property on a grid item.
 
-Make the element with the item5 class consume the last two rows.
+CSS Grid: Align All Items Vertically using align-items
+Using the align-items property on a grid container will set the vertical alignment for all the items in our grid.
+
+Use it now to move all the items to the end of each cell.
 
 -->
